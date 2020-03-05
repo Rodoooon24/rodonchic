@@ -1,0 +1,96 @@
+@keyframes move_eye {
+ 0%{
+ 	background: white;
+ }
+ 25%{
+ 	background: red;
+ }
+ 50%{
+	background: green;
+ }
+ 75%{
+ 	background: blue;
+ }
+ 100%{
+ 	background: black;
+ }
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+header{
+	background: #0e0e0e;
+	height: 70px;
+
+	display: flex;
+	align-items: center;
+	padding-left: 250px;
+	padding-right: 250px; 
+	animation: 5s move_eye;
+}
+header h1{
+	color: white;
+	font-size: 26px;
+	font-family: Arial;
+}
+header nav{
+	margin-left: auto;
+}
+header nav a{
+	color: white;
+	text-decoration: none;
+	margin-left: 10px;
+	transition: 0.3s;
+}
+header nav a:hover{
+	color: #cecece;
+	text-decoration: underline;
+}
+header nav a:active{
+	position: relative;
+	bottom: -2px;
+}
+
+.info{
+	background: url(kGLxFwNOoYk.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+}
+
+.info h2{
+	font-size: 40px;
+	color: white;
+	letter-spacing: 6px;
+	margin: 0;
+}
+.info p{
+	color: white;
+	letter-spacing: 1px;
+	margin-bottom: 25px; 
+}
+
+.info a{
+	color: white;
+	text-decoration: none;
+	padding: 8px 20px;
+	border: 2px solid white;
+	box-shadow: 2px 2px 4px black;
+	margin: 10px;
+}
+.info a:hover{
+	background: white;
+	color: black;
+	
+}
+.info a:active{
+	position: relative;
+	bottom: -2px;
+}
